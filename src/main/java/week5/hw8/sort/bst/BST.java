@@ -1,10 +1,13 @@
-package week5.hw8.sort;
+package week5.hw8.sort.bst;
+
+import week5.hw8.sort.TNode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class BST {
-	TNode	top;
+	TNode top;
 
 	public BST() {
 		this.top = null;
@@ -37,8 +40,12 @@ public class BST {
 			cond = condRight || condLeft || (cur.getValue() == value);
 		}
 
-		if (condLeft) cur.setLeft(new TNode(value));
-		else cur.setRight(new TNode(value));
+		if (condLeft) {
+			cur.setLeft(new TNode(value));
+		}
+		else {
+			cur.setRight(new TNode(value));
+		}
 
 	}
 
@@ -135,13 +142,13 @@ public class BST {
 		return ((height1 > height2) ? height1 : height2);
 	}
 
-	public ArrayList<Integer> traversPreOrder() {
-		ArrayList<Integer> arr = new ArrayList<Integer>();
+	public List<Integer> traversPreOrder() {
+		List<Integer> arr = new ArrayList<Integer>();
 		getAllPreOrder(top, arr);
 		return arr;
 	}
 
-	private void getAllPreOrder(TNode topNode, ArrayList<Integer> arr) {
+	private void getAllPreOrder(TNode topNode, List<Integer> arr) {
 		if (topNode != null) {
 			arr.add(topNode.getValue());
 			getAllPreOrder(topNode.getLeft(), arr);

@@ -1,4 +1,4 @@
-package week5.hw8.sort;
+package week5.hw8.sort.searchreccur;
 
 public class BinarySearcherReccur {
 	public static int binarySearch(int[] vector, int element) {

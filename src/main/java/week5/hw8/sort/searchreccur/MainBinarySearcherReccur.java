@@ -1,8 +1,8 @@
-package week5.hw8.sort;
-
-import java.util.Arrays;
+package week5.hw8.sort.searchreccur;
 
 import week5.lesson9.ArraySort;
+
+import java.util.Arrays;
 
 public class MainBinarySearcherReccur {
 	static final int	arrNum	= 100;

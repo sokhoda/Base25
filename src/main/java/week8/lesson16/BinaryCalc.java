@@ -284,7 +284,7 @@ public class BinaryCalc extends Application implements AttribInt {
 						"Невідомий режим роботи", ButtonType.CLOSE,
 						ButtonType.OK);
 				dlg.setTitle("Невідомий режим роботи");
-				dlg.setOnShowing(evt -> System.out.println(evt));
+				dlg.setOnShowing(System.out::println);
 				// dlg.getDialogPane().setContentText(
 				// "I'm glad I didn't need to use this...");
 				dlg.show();

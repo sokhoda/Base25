@@ -1,4 +1,4 @@
-package week5.hw8.sort;
+package week5.hw8.sort.bst;
 
 public class MainBinaryTree {
 	static final int	arrNum	= 50;

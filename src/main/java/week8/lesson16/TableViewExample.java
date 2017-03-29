@@ -28,7 +28,7 @@ import javafx.stage.Stage;
 import javafx.util.Callback;
 import javafx.util.Pair;
 
-import org.controlsfx.dialog.LoginDialog;
+import org.controlsfx.dialog.*;
 
 public class TableViewExample extends Application {
 	/* w ww. j a v a 2s . c om */

@@ -1,5 +1,8 @@
 package week5.hw8.sort;
 
+import lombok.Data;
+
+@Data
 public class Student {
 	private String	name;
 
@@ -13,29 +16,4 @@ public class Student {
 		this.middleName = middleName;
 		this.setMarks(marks);
 	}
-
-	public int[] getMarks() {
-		return marks;
-	}
-
-	public void setMarks(int[] marks) {
-		this.marks = marks;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getSurname() {
-		return surname;
-	}
-
-	public void setSurname(String surname) {
-		this.surname = surname;
-	}
-
 }
